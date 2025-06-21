@@ -1,0 +1,35 @@
+@use '../../../styles/mixin' as *;
+
+.theme_toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.switch {
+    width: 45px;
+    height: 24px;
+    border-radius: 999px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+
+    &.light {
+        justify-content: flex-start;
+        background-color: #f1c40f;
+    }
+
+    &.dark {
+        justify-content: flex-end;
+        background-color: #888;
+    }
+}
+
+.thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}

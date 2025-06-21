@@ -1,0 +1,137 @@
+@use './mixin' as *;
+
+.kg_main {
+    padding: 4rem 0;
+
+    .kg_head {
+        margin-bottom: 3rem;
+
+        .kg_title {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: colormap(brand-black);
+            font-family: $Dosis_Font;
+        }
+
+         .kg_text {
+            font-size: 1.15rem;
+            color: colormap(brand-black);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+    }
+
+
+    .kg_section_box {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        position: relative;
+
+
+        @include sm {
+            gap: 1rem;
+        }
+
+        .kg_section_wrap {
+            margin-bottom: 2rem;
+
+            .kg_strong {
+                font-weight: 550;
+            }
+
+            .kg_title {
+                font-size: 1.75rem;
+                font-weight: 600;
+                color: colormap(brand-black);
+                margin-bottom: .5rem;
+            }
+
+            .kg_list {
+                list-style-type: unset;
+                margin: 1rem 0 1rem 1.25rem;
+
+                li {
+                    font-size: 1.15rem;
+                    color: colormap(brand-black);
+                    margin-bottom: 1rem;
+                    line-height: 1.6;
+
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+
+            ol {
+                list-style-type: decimal;
+                margin: 1rem 0 1rem 1.25rem;
+
+                li {
+                    font-size: 1.15rem;
+                    color: colormap(brand-black);
+                    margin-bottom: 1rem;
+                    line-height: 1.6;
+
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+
+            .kg_text {
+                font-size: 1.15rem;
+                color: colormap(brand-black);
+                margin-bottom: 1rem;
+                line-height: 1.6;
+
+                a {
+                    color: colormap(brand-brown);
+                }
+            }
+
+            .kg_privacy_text {
+                line-height: 1.5;
+                font-size: 1rem;
+                color: colormap(brand-black);
+                line-height: 1.6;
+            }
+
+            .kg_bottom {
+
+                .kg_name {
+                    font-size: 1.15rem;
+                    color: colormap(brand-black);
+                    margin-bottom: 0rem;
+                    line-height: 1.6;
+                }
+                
+                .kg_text {
+                    font-size: 1.15rem;
+                    color: colormap(brand-black);
+                    margin-bottom: 0rem;
+                    line-height: 1.6;
+                }
+
+                .kg_email {
+                    font-size: 1.15rem;
+                    color: rgba($color: colormap(brand-brown), $alpha: .5);
+                    margin-bottom: 0rem;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+
+    .kg_text {
+        font-size: 1.15rem;
+        color: colormap(brand-black);
+        margin-bottom: 1rem;
+        line-height: 1.6;
+
+        a {
+            color: colormap(brand-brown);
+        }
+    }
+}
