@@ -30,7 +30,7 @@ const ContactUs = () => {
     }
 
     return (
-        <div className={styles.tp_contact}>
+        <div className={styles.tp_contact} id='contact'>
             <div className='contain'>
                 <div className={styles.tp_contact_wrap}>
                     <div className={styles.tp_contact_header}>

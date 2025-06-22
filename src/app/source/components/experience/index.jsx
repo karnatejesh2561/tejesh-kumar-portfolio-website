@@ -5,7 +5,7 @@ import styles from './experience.module.scss'
 const Experience = () => {
     
     return (
-        <section className={styles.tp_experience}>
+        <section className={styles.tp_experience} id='experience'>
             <div className="contain">
                 <h2 className={styles.tp_experience__title}>Work Experience</h2>
 

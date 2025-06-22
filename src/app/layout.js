@@ -8,6 +8,7 @@ import { Urbanist } from "next/font/google";
 /** Components */
 import Header from './source/components/header';
 import { ThemeProvider } from './source/components/context';
+import Footer from './source/components/footer';
 
 const urbanist_Font = Urbanist({
     subsets: ['latin'],
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
                 <ThemeProvider >
                     <Header />
                     {children}
+                    <Footer/>
                 </ThemeProvider>
             </body>
         </html>

@@ -9,7 +9,7 @@ import styles from './projects.module.scss'
 
 const Projects = () => {
     return (
-        <div className={styles.tp_projects}>
+        <div className={styles.tp_projects} id='projects'>
             <div className="contain">
                 <div className={styles.tp_projects__header}>
                     <div className={styles.tp_projects__badge}>💼 My work</div>

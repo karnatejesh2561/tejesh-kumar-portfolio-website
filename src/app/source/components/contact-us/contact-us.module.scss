@@ -2,7 +2,7 @@
 
 
 .tp_contact {
-    padding-bottom: 6rem;
+    padding-bottom: 5rem;
 
     .tp_contact_wrap {
 
@@ -203,7 +203,7 @@
                             .error_msg {
                                 font-size: .825rem;
                                 color: colormap(--error);
-                                background-color: rgba($color: colormap(--error), $alpha: .1);
+                                background-color: rgba($color: colormap(--card-bg), $alpha: .1);
                                 height: auto;
                                 padding: 0.45rem 0.875rem;
                                 border-radius: 0.41rem;
