@@ -25,12 +25,22 @@
             display: flex;
             justify-content: space-between;
 
+            @include mobile {
+                flex-direction: column;
+
+            }
+
             .tp_left {
                 width: 48%;
                 padding: 2rem;
                 border-radius: 1rem;
                 background-color: colormap(--card-bg);
                 border: 1px solid colormap(--border-color);
+
+                @include mobile {
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
 
                 .tp_form_title {
                     font-size: 2rem;
@@ -116,6 +126,10 @@
                 background-color: colormap(--card-bg);
                 border: 1px solid colormap(--border-color);
                 width: 48%;
+
+                @include mobile {
+                    width: 100%;
+                }
 
                 .tp_contact_form_title {
                     font-size: 2rem;

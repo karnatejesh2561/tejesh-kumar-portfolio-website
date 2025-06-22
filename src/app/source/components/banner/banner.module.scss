@@ -3,7 +3,7 @@
 .hero {
     
     &_wrap {
-        min-height: calc(100vh);
+        min-height: calc(100vh - 60px);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -12,6 +12,11 @@
         position: relative;
         overflow: hidden;
         width: 100%;
+
+        @include mobile {
+            min-height: 100%;
+            padding: 12rem 0;
+        }
 
         .hero_content {
             position: relative;
@@ -61,6 +66,12 @@
                 color: colormap(--text-secondary);
                 animation: fadeInUp 1s ease-out 0.6s both;
                 line-height: 1.45;
+
+                @include  mobile {
+                    br {
+                        display: none;
+                    }
+                }
             }
     
             .hero_cta {

@@ -31,6 +31,10 @@
     position: relative;
     padding-left: 4.5rem;
     padding-bottom: 2.5rem;
+
+    @include ls {
+        padding-left: 3rem;
+    }
 }
 
 .tp_experience__item:last-child {
