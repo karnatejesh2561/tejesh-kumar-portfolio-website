@@ -71,7 +71,7 @@ const Header = () => {
             <div className="contain">
                 <nav className={styles.tp_nav}>
                     <div className={styles.navHeader}>
-                        <div className={styles.logo}>MyLogo</div>
+                        <div className={styles.logo}>TEJESH</div>
                         <button
                             className={styles.toggle}
                              onClick={() => setMenuOpen(!menuOpen)}
