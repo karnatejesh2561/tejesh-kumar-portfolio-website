@@ -1,0 +1,37 @@
+{
+    "contact": {
+        "name": {
+            "label": "Name*",
+            "placeholder": "enter your name",
+            "errors": {
+                "required": "name is required.",
+                "min": "name must be at least 2 characters.",
+                "max": "name cannot exceed 50 characters."
+            }
+        },
+        "phone": {
+            "label": "Phone*",
+            "placeholder": "enter phone no",
+            "errors": {
+                "required": "phone is required.",
+                "invalid": "please enter a valid 10-digit phone number"
+            }
+        },
+        "email": {
+            "label": "Email*",
+            "placeholder": "enter your email",
+            "errors": {
+                "required": "email is required.",
+                "valid": "please enter a valid email address.",
+                "max": "email cannot exceed 250 characters."
+            }
+        },
+        "message": {
+            "label": "Message",
+            "placeholder": "enter any messages",
+            "errors": {
+                "max": "message cannot exceed 200 characters."
+            }
+        }
+    }
+}

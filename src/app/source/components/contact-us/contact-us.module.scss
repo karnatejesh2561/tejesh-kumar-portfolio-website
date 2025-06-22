@@ -1,0 +1,261 @@
+@use '../../styles/mixin' as *;
+
+
+.tp_contact {
+    padding-bottom: 6rem;
+
+    .tp_contact_wrap {
+
+        .tp_contact_header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 4rem;
+
+            .tp_contact_title {
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                color: colormap(--text-primary);
+            }
+        }
+
+        .tp_contact_form {
+            display: flex;
+            justify-content: space-between;
+
+            .tp_left {
+                width: 48%;
+                padding: 2rem;
+                border-radius: 1rem;
+                background-color: colormap(--card-bg);
+                border: 1px solid colormap(--border-color);
+
+                .tp_form_title {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    margin-bottom: 1rem;
+                    color: colormap(--text-primary);
+                }
+
+                .tp_form_text {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    margin-bottom: 2.5rem;
+                    line-height: 1.5;
+                    color: colormap(--text-secondary);
+                }
+
+                .tp_contact_details {
+
+                    .tp_contact_details_card {
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 1rem;
+                        padding: 1rem;
+                        border-radius: 1rem;
+                        background-color: colormap(--card-bg);
+                        border: 1px solid colormap(--border-color);
+                        margin-bottom: 1.5rem;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        .tp_contact_details_card_image {
+                            position: relative;
+                            height: 3rem;
+                            width: 3rem;
+                            background-color: colormap(--card-bg);
+                            border-radius: 1rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            &_wrap {
+                                position: relative;
+                                height: 2rem;
+                                width: 2rem;
+
+                                &:nth-child(3) {
+                                    height: 1.5rem;
+                                    width: 1.5rem;
+                                }
+
+                                img {
+                                    height: 100%;
+                                    width: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+
+                        }
+
+                        .tp_contact_details_card_content {
+
+                            .tp_name {
+                                font-size: 1rem;
+                                font-weight: bold;
+                                line-height: 1.5;
+                            }
+
+                            .tp_text {
+                                font-size: 1rem;
+                                font-weight: 400;
+                                color: colormap(--text-secondary);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .tp_right {
+                padding: 2rem;
+                border-radius: 1rem;
+                background-color: colormap(--card-bg);
+                border: 1px solid colormap(--border-color);
+                width: 48%;
+
+                .tp_contact_form_title {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    margin-bottom: 1rem;
+                    color: colormap(--text-primary);
+                }
+
+                .kg_form {
+
+                    .kg_form_wrap {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: flex-start;
+                        width: calc(100% + 30px);
+                        margin-left: -15px;
+
+                        @include sm {
+                            width: 100%;
+                            margin-left: 0;
+                        }
+
+                        .input_wrap {
+                            position: relative;
+                            width: calc(50% - 30px);
+                            margin: 15px;
+
+                            @include sm {
+                                width: 100%;
+                                margin: 15px 0;
+                            }
+
+                            &.full {
+                                width: calc(100% - 30px);
+
+                                @include sm {
+                                    width: 100%;
+                                    margin: 15px 0;
+                                }
+                            }
+
+                            label {
+                                font-size: 1rem;
+                                font-weight: 600;
+                                color: colormap(--text-primary);
+                                margin-bottom: 0.6rem;
+                                display: block;
+
+                                @include ls {
+                                    margin-bottom: .5rem;
+                                }
+                            }
+
+                            .input {
+                                width: 100%;
+                                height: 3rem;
+                                padding: 0.45rem 0.875rem;
+                                font-size: 1rem;
+                                font-weight: 600;
+                                color: colormap(--text-primary);
+                                background-color: rgba(colormap(--card-bg), .1);
+                                border: 1.5px solid rgba(colormap(--border-color), 0.1);
+                                border-radius: .625rem;
+                                transition: all 0.25s ease-in;
+
+                                &::placeholder {
+                                    color: rgba($color: colormap(--text-secondary), $alpha: .5);
+                                    font-size: 1rem;
+                                    font-weight: 500;
+                                }
+
+                                &:focus {
+                                    border-color: #667eea;
+                                    outline: none;
+                                }
+                            }
+
+                            textarea.input {
+                                height: 8rem;
+                                padding-top: .75rem;
+                                background-color: rgba(colormap(--card-bg), .1);
+                                width: 100%;
+                            }
+
+                            .error_msg {
+                                font-size: .825rem;
+                                color: colormap(--error);
+                                background-color: rgba($color: colormap(--error), $alpha: .1);
+                                height: auto;
+                                padding: 0.45rem 0.875rem;
+                                border-radius: 0.41rem;
+                                font-weight: 600;
+                                width: fit-content;
+                                margin-top: 0.5rem;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                            }
+                        }
+                    }
+
+                    .tp_btn {
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-end;
+                    }
+                    .kg_save_btn {
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 8px;
+                        padding: 16px 32px;
+                        border-radius: 50px;
+                        text-decoration: none;
+                        font-weight: 600;
+                        font-size: 1rem;
+                        transition: all 0.3s ease;
+                        border: none;
+                        cursor: pointer;
+                        position: relative;
+                        overflow: hidden;
+                        background: colormap(--primary-gradient);
+                        color: white;
+                        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+                        margin-top: 2rem;
+                        margin-left: auto;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: -100%;
+                            width: 100%;
+                            height: 100%;
+                            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+                            transition: left 0.5s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

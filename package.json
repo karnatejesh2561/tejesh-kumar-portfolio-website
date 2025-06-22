@@ -10,12 +10,16 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.1.1",
     "@svgr/webpack": "^8.1.0",
+    "chalk": "^5.4.1",
     "framer-motion": "^12.18.1",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "sass": "^1.89.2"
+    "react-hook-form": "^7.58.1",
+    "sass": "^1.89.2",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "husky": "^8.0.0"
