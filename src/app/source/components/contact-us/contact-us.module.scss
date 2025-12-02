@@ -191,7 +191,7 @@
                                 font-weight: 600;
                                 color: colormap(--text-primary);
                                 background-color: rgba(colormap(--card-bg), .1);
-                                border: 1.5px solid rgba(colormap(--border-color), 0.1);
+                                border: 1px solid colormap(--border-color);
                                 border-radius: .625rem;
                                 transition: all 0.25s ease-in;
 
@@ -237,6 +237,7 @@
                         align-items: flex-end;
                         justify-content: flex-end;
                     }
+
                     .kg_save_btn {
                         display: inline-flex;
                         align-items: center;

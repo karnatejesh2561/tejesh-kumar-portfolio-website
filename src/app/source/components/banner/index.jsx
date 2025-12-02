@@ -20,7 +20,7 @@ const Banner = () => {
                         </div>
                         <h1>Karna Tejesh Kumar </h1>
                         <p className={styles.hero_subtitle}>
-                            Senior Frontend Developer crafting delightful and <br/> scalable digital experiences.
+                            Senior Frontend Developer crafting delightful and <br /> scalable digital experiences.
                         </p>
                         <div className={styles.hero_cta}>
                             <a href="#projects" className={`${styles.btn} ${styles.btn_primary}`}>

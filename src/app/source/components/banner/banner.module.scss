@@ -1,7 +1,7 @@
 @use '../../styles/mixin' as *;
 
 .hero {
-    
+
     &_wrap {
         min-height: calc(100vh);
         display: flex;
@@ -26,7 +26,7 @@
             align-items: center;
             width: 100%;
             justify-content: center;
-    
+
             .hero_badge {
                 display: inline-flex;
                 align-items: center;
@@ -39,13 +39,13 @@
                 margin-bottom: 2rem;
                 font-size: 0.9rem;
                 animation: fadeInUp 1s ease-out 0.2s both;
-    
+
                 &::before {
                     content: '🚀';
                     animation: bounce 2s infinite;
                 }
             }
-    
+
             h1 {
                 font-size: clamp(3rem, 8vw, 6.5rem);
                 font-weight: 800;
@@ -58,7 +58,7 @@
                 animation: gradientShift 4s ease-in-out infinite, fadeInUp 1s ease-out 0.4s both;
                 line-height: 1.1;
             }
-    
+
             .hero_subtitle {
                 font-size: clamp(1.25rem, 3vw, 2rem);
                 font-weight: 300;
@@ -67,20 +67,20 @@
                 animation: fadeInUp 1s ease-out 0.6s both;
                 line-height: 1.45;
 
-                @include  mobile {
+                @include mobile {
                     br {
                         display: none;
                     }
                 }
             }
-    
+
             .hero_cta {
                 display: flex;
                 gap: 1rem;
                 justify-content: center;
                 flex-wrap: wrap;
                 animation: fadeInUp 1s ease-out 0.8s both;
-    
+
                 .btn {
                     display: inline-flex;
                     align-items: center;
@@ -95,7 +95,7 @@
                     cursor: pointer;
                     position: relative;
                     overflow: hidden;
-    
+
                     &::before {
                         content: '';
                         position: absolute;
@@ -106,28 +106,28 @@
                         background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
                         transition: left 0.5s ease;
                     }
-    
+
                     &:hover::before {
                         left: 100%;
                     }
-    
+
                     &.btn_primary {
                         background: colormap(--primary-gradient);
                         color: white;
                         box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
-    
+
                         &:hover {
                             transform: translateY(-3px);
                             box-shadow: 0 20px 40px rgba(102, 126, 234, 0.6);
                         }
                     }
-    
+
                     &.btn_secondary {
                         background: rgba(255, 255, 255, 0.1);
-                        color: white;
+                        color: colormap(--text-secondary);
                         border: 1px solid colormap(--border-color);
                         backdrop-filter: blur(20px);
-    
+
                         &:hover {
                             background: rgba(255, 255, 255, 0.2);
                             transform: translateY(-3px);
@@ -136,14 +136,14 @@
                 }
             }
         }
-    
+
         .floating_element {
             position: absolute;
             background: colormap(--accent-gradient);
             border-radius: 50%;
             opacity: 0.1;
             animation: floatRandom 20s infinite ease-in-out;
-    
+
             &:nth-of-type(1) {
                 top: 20%;
                 left: 10%;
@@ -151,7 +151,7 @@
                 height: 60px;
                 animation-delay: 0s;
             }
-    
+
             &:nth-of-type(2) {
                 top: 60%;
                 right: 10%;
@@ -159,7 +159,7 @@
                 height: 80px;
                 animation-delay: 5s;
             }
-    
+
             &:nth-of-type(3) {
                 bottom: 20%;
                 left: 20%;
