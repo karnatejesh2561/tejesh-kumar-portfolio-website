@@ -10,14 +10,14 @@ import Skills from "./source/components/skills"
 const Homepage = () => {
 
     return (
-        <>
+        <div style={{ position: "relative", zIndex: "2" }}>
             <Banner />
             <About />
             <Skills />
             <Projects />
             <Experience />
             <ContactUs />
-        </>
+        </div>
     )
 }
 
