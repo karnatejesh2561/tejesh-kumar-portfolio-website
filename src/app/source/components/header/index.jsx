@@ -7,6 +7,8 @@ import CloseIcon from '../../../../../public/icons/cross.svg';
 import useWindowSize from '../useWindowSize';
 import { AnimatePresence, motion } from 'framer-motion';
 
+import ToggleTheme from './toggle-theme';
+
 const Header = () => {
     const [activeSection, setActiveSection] = useState('home');
     const [menuOpen, setMenuOpen] = useState(false);
@@ -36,7 +38,7 @@ const Header = () => {
         return () => observer.disconnect();
     }, []);
 
-     useEffect(() => {
+    useEffect(() => {
         if (windowSize.width !== undefined) {
             if (windowSize.width > 767) {
                 setMenuOpen(true);
@@ -71,14 +73,17 @@ const Header = () => {
             <div className="contain">
                 <nav className={styles.tp_nav}>
                     <div className={styles.navHeader}>
-                        <div className={styles.logo}>MyLogo</div>
-                        <button
-                            className={styles.toggle}
-                             onClick={() => setMenuOpen(!menuOpen)}
-                            aria-label="Toggle Menu"
-                        >
-                            {menuOpen ? <CloseIcon/> : <MenuIcon />}
-                        </button>
+                        <div className={styles.logo}>TEJESH</div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                            <ToggleTheme />
+                            <button
+                                className={styles.toggle}
+                                onClick={() => setMenuOpen(!menuOpen)}
+                                aria-label="Toggle Menu"
+                            >
+                                {menuOpen ? <CloseIcon /> : <MenuIcon />}
+                            </button>
+                        </div>
                     </div>
 
                     <AnimatePresence initial={false}>
@@ -101,6 +106,7 @@ const Header = () => {
                                         </Link>
                                     </li>
                                 ))}
+                                <ToggleTheme />
                             </motion.ul>
                         )}
                     </AnimatePresence>

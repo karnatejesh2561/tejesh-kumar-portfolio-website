@@ -6,12 +6,15 @@ $colors: (
     --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%),
     --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%),
     --success-gradient: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%),
-    --dark-bg: #0a0a0a,
-    --card-bg: rgba(255, 255, 255, 0.05),
-    --text-primary: #ffffff,
-    --text-secondary: rgba(255, 255, 255, 0.8),
-    --border-color: rgba(255, 255, 255, 0.1),
+    --dark-bg: var(--dark-bg),
+    --card-bg: var(--card-bg),
+    --text-primary: var(--text-primary),
+    --text-secondary: var(--text-secondary),
+    --border-color: var(--border-color),
     --error: #F45E5A,
+    --nav-bg: var(--nav-bg),
+    --input-bg: var(--input-bg),
+    --hover-bg: var(--hover-bg),
 );
 
 
