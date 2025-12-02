@@ -27,7 +27,7 @@
             margin-bottom: 1rem;
             text-align: center;
         }
-        
+
         .tp_skills__subtitle {
             font-size: 1.1rem;
             color: colormap(--text-secondary);
@@ -64,7 +64,7 @@
             width: 100%;
             margin: 1rem 0;
         }
-        
+
 
         &::before {
             content: '';
@@ -90,7 +90,7 @@
         font-size: 1.8rem;
         margin-bottom: 1.5rem;
         transition: all 0.3s ease;
-        
+
         .tp_skills__image {
             display: flex;
             align-items: center;
@@ -128,6 +128,7 @@
             padding: .425rem 1rem .625rem 2.5rem;
             border-radius: 2rem;
             background: rgba(255, 255, 255, 0.1);
+            border: 1px solid colormap(--border-color);
             display: flex;
             align-items: center;
             justify-content: center;
