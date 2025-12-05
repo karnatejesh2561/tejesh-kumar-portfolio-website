@@ -20,7 +20,7 @@ const About = () => {
                     <div className={styles.tp_about__image}>
                         <div className={styles.tp_about__profileContainer}>
                             <div className={styles.tp_about__profilePic}>
-                                <Image 
+                                <Image
                                     src={'/images/profile.png'}
                                     alt='profile'
                                     sizes='100vw'
