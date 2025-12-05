@@ -30,13 +30,17 @@ const About = () => {
                         </div>
                     </div>
                     <div className={styles.tp_about__text}>
-                        <p>Hello! I'm <strong>Tejesh Kumar Karna</strong>, a passionate Frontend Developer with over 2.5 years of experience building scalable web applications using React and Next.js.</p>
-                        <p>Currently working as a <strong>Senior Frontend Developer</strong>, I lead frontend initiatives, mentor junior developers, and help architect high-performance UI solutions.</p>
-                        <p>My journey includes expanding into React Native for mobile apps and delivering polished user interfaces that impact thousands of users.</p>
+                        <p>Hello! I'm <strong>Tejesh Kumar Karna</strong>, a passionate Frontend Developer with over 2.7 years of experience building scalable web applications using React and Next.js.</p>
+
+                        <p>I previously worked as a <strong>Senior Frontend Developer</strong>, where I led frontend initiatives, contributed to architecture decisions, and helped deliver high-performance, user-friendly interfaces.</p>
+
+                        <p>I'm currently exploring new opportunities to contribute my skills in React, Next.js, TypeScript, and modern UI development. I'm also expanding into React Native and building polished mobile and web experiences that create real impact.</p>
+
+
 
                         <div className={styles.tp_about__stats}>
                             <div className={styles.tp_about__statItem}>
-                                <div className={styles.tp_about__statNumber}>2.5</div>
+                                <div className={styles.tp_about__statNumber}>2.7</div>
                                 <div className={styles.tp_about__statLabel}>Years Experience</div>
                             </div>
                             <div className={styles.tp_about__statItem}>
